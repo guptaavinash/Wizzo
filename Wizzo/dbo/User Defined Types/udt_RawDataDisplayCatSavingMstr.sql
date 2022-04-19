@@ -1,0 +1,20 @@
+﻿CREATE TYPE [dbo].[udt_RawDataDisplayCatSavingMstr] AS TABLE (
+    [BusinessUnitId]                 NVARCHAR (500) NULL,
+    [BusinessUnitNodeType]           NVARCHAR (50)  NULL,
+    [DisplayCatId]                   NVARCHAR (500) NULL,
+    [DisplayTypeId]                  NVARCHAR (500) NULL,
+    [AdtnlDsplayLocId]               NVARCHAR (500) NULL,
+    [flgAddDisplay]                  NVARCHAR (20)  NULL,
+    [flgCompleteStatus]              NVARCHAR (500) NULL,
+    [flgDisplayAvilable]             NVARCHAR (500) NULL,
+    [flgDisplayInLocation]           NVARCHAR (500) NULL,
+    [flgInnerOuter]                  NVARCHAR (500) NULL,
+    [flgInnerOuterAdditionalDisplay] NVARCHAR (500) NULL,
+    [flgOtherPrdctAvlbl]             NVARCHAR (500) NULL,
+    [StackSequenceNumber]            NVARCHAR (500) NULL,
+    [RowId]                          NVARCHAR (500) NULL,
+    [Sstat]                          NVARCHAR (500) NULL,
+    [StoreID]                        NVARCHAR (500) NULL,
+    [TempId]                         NVARCHAR (500) NULL,
+    [TemplateId]                     NVARCHAR (500) NULL);
+

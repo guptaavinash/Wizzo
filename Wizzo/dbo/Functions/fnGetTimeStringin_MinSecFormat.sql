@@ -1,0 +1,16 @@
+﻿
+
+CREATE FUNCTION [dbo].[fnGetTimeStringin_MinSecFormat]
+(
+	@TimeinSec INT
+)
+RETURNS VARCHAR(10)
+AS
+BEGIN
+	DECLARE @TimeString VARCHAR(10)
+	SELECT @TimeString= CASE WHEN FLOOR(@TimeinSec/3600)<10 THEN '0' + CAST(FLOOR(@TimeinSec/3600) AS VARCHAR) ELSE CAST(FLOOR(@TimeinSec/3600) AS VARCHAR) END + ':' +
+	CASE WHEN FLOOR((@TimeinSec/60)%60)<10 THEN '0' + CAST(FLOOR((@TimeinSec/60)%60) AS VARCHAR) ELSE CAST(FLOOR((@TimeinSec/60)%60) AS VARCHAR) END 
+	--+ ':' + CASE WHEN @TimeinSec%60 <10 THEN '0' + CAST(FLOOR(@TimeinSec%60) AS VARCHAR) ELSE CAST(@TimeinSec%60 AS VARCHAR) END
+
+	RETURN @TimeString
+END

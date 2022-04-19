@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[tblOLAPProductiveCallsWeekly] (
+    [ChannelId]         INT     NOT NULL,
+    [SEId]              INT     NOT NULL,
+    [SENodeType]        INT     NULL,
+    [RouteId]           INT     NULL,
+    [RouteId_Org]       INT     NULL,
+    [RouteNodeType]     INT     NULL,
+    [RouteNodeType_Org] INT     NULL,
+    [StoreId]           INT     NOT NULL,
+    [SKUId]             INT     NOT NULL,
+    [WeekEnding]        DATE    NOT NULL,
+    [WeekEndingMonthly] DATE    NOT NULL,
+    [RptMonthYear]      INT     NOT NULL,
+    [VisitId]           INT     NULL,
+    [FlgProductive]     TINYINT NOT NULL,
+    [StoreCategoryId]   INT     NOT NULL,
+    [StoreClassId]      INT     NOT NULL,
+    [StoreTypeId]       INT     NULL,
+    [flgOrderType]      TINYINT NULL,
+    [OrderId]           INT     NULL,
+    [CovAreaId]         INT     NULL,
+    [ManDay]            BIGINT  NULL,
+    [flgOrderSource]    TINYINT NULL
+);
+

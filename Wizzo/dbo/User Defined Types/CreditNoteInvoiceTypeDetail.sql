@@ -1,0 +1,23 @@
+﻿CREATE TYPE [dbo].[CreditNoteInvoiceTypeDetail] AS TABLE (
+    [CreNoteTypeId]            TINYINT        NULL,
+    [InvDetId]                 INT            NULL,
+    [InvId]                    INT            NULL,
+    [PrdId]                    INT            NULL,
+    [Prdbatchid]               INT            NULL,
+    [Qty]                      INT            NULL,
+    [Rate]                     [dbo].[Amount] NULL,
+    [RateBeforeTax]            [dbo].[Amount] NULL,
+    [ValueBeforeTax]           [dbo].[Amount] NULL,
+    [DiscAmt]                  [dbo].[Amount] NULL,
+    [ValueBeforeTaxAfterDisc]  [dbo].[Amount] NULL,
+    [Tax]                      [dbo].[Amount] NULL,
+    [TaxValue]                 [dbo].[Amount] NULL,
+    [ValueAfterTax]            [dbo].[Amount] NULL,
+    [Percentage]               [dbo].[Amount] NULL,
+    [ClaimAmount]              [dbo].[Amount] NULL,
+    [IsInclude]                BIT            NULL,
+    [Remarks]                  VARCHAR (500)  NULL,
+    [UOMID]                    INT            NULL,
+    [OrderReturnReplacementId] INT            NULL,
+    [DlvryNoteDetailsID]       INT            NULL);
+

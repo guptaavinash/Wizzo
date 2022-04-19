@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[tmpRawDataLastVisitDetailsAPI_Sales] (
+    [VisitGuid]          NVARCHAR (500) NULL,
+    [ProductERPId]       NVARCHAR (500) NULL,
+    [ProductName]        NVARCHAR (500) NULL,
+    [Variant]            NVARCHAR (500) NULL,
+    [Material]           NVARCHAR (500) NULL,
+    [Quantity]           NVARCHAR (500) NULL,
+    [Price]              NVARCHAR (500) NULL,
+    [OrderType]          NVARCHAR (500) NULL,
+    [Discount_Product]   NVARCHAR (500) NULL,
+    [SchemeCashDiscount] NVARCHAR (500) NULL,
+    [SchemeQuantity]     NVARCHAR (500) NULL,
+    [SchemeErpId]        NVARCHAR (500) NULL,
+    [SuggestiveQuantity] NVARCHAR (500) NULL,
+    [VisitId]            NVARCHAR (500) NULL,
+    [AlternateCategory]  NVARCHAR (500) NULL,
+    [DistributorErpId]   NVARCHAR (500) NULL,
+    [OriginalPTR]        NVARCHAR (500) NULL,
+    [DistributorType]    NVARCHAR (500) NULL,
+    [FAUnifySource]      NVARCHAR (500) NULL,
+    [ProductUnit]        NVARCHAR (500) NULL,
+    [CGST]               NVARCHAR (500) NULL,
+    [SGST]               NVARCHAR (500) NULL,
+    [IGST]               NVARCHAR (500) NULL
+);
+

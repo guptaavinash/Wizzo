@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[tblInc_KRAMaster] (
+    [KRAID]   INT           IDENTITY (1, 1) NOT NULL,
+    [KRAName] VARCHAR (200) NOT NULL,
+    PRIMARY KEY CLUSTERED ([KRAID] ASC)
+);
+

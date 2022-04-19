@@ -1,0 +1,86 @@
+19-04-2022 16:34:49	This log contains information about the import schema operation into project 'Wizzo' on computer 'DESKTOP-IOUS343' by user 'shavi'.
+19-04-2022 16:34:49	Import of database schema has started.
+19-04-2022 16:34:58	Gathering database credentials
+19-04-2022 16:34:58	Gathering database options
+19-04-2022 16:34:58	Gathering generic database scoped configuration option
+19-04-2022 16:34:58	Gathering users
+19-04-2022 16:34:58	Gathering roles
+19-04-2022 16:34:58	Gathering application roles
+19-04-2022 16:34:58	Gathering role memberships
+19-04-2022 16:34:58	Gathering filegroups
+19-04-2022 16:34:58	Gathering full-text catalogs
+19-04-2022 16:34:58	Gathering assemblies
+19-04-2022 16:34:58	Gathering certificates
+19-04-2022 16:34:58	Gathering asymmetric keys
+19-04-2022 16:34:58	Gathering symmetric keys
+19-04-2022 16:34:58	Gathering encrypted symmetric keys
+19-04-2022 16:34:58	Gathering schemas
+19-04-2022 16:34:58	Gathering XML schema collections
+19-04-2022 16:34:58	Gathering user-defined data types
+19-04-2022 16:34:58	Gathering user-defined types
+19-04-2022 16:34:58	Gathering table types
+19-04-2022 16:34:59	Gathering unique keys for table types
+19-04-2022 16:34:59	Gathering primary keys for table types
+19-04-2022 16:34:59	Gathering indexes for table types
+19-04-2022 16:34:59	Gathering check constraints for table types
+19-04-2022 16:34:59	Gathering default constraints for table types
+19-04-2022 16:34:59	Gathering partition functions
+19-04-2022 16:34:59	Gathering partition schemes
+19-04-2022 16:34:59	Gathering functions
+19-04-2022 16:34:59	Gathering encrypted functions
+19-04-2022 16:34:59	Gathering aggregates
+19-04-2022 16:34:59	Gathering procedures
+19-04-2022 16:35:02	Gathering encrypted procedures
+19-04-2022 16:35:02	Gathering tables
+19-04-2022 16:35:04	Gathering primary keys
+19-04-2022 16:35:04	Gathering unique constraints
+19-04-2022 16:35:04	Gathering foreign keys
+19-04-2022 16:35:04	Gathering default constraints
+19-04-2022 16:35:04	Gathering check constraints
+19-04-2022 16:35:04	Gathering views
+19-04-2022 16:35:04	Gathering encrypted views
+19-04-2022 16:35:04	Gathering indexes
+19-04-2022 16:35:04	Gathering statistics
+19-04-2022 16:35:04	Gathering full-text index stoplists
+19-04-2022 16:35:04	Gathering search property lists
+19-04-2022 16:35:04	Gathering search properties
+19-04-2022 16:35:04	Gathering full-text indexes
+19-04-2022 16:35:04	Gathering column store indexes
+19-04-2022 16:35:04	Gathering spatial indexes
+19-04-2022 16:35:04	Gathering XML indexes
+19-04-2022 16:35:04	Gathering Selective XML indexes
+19-04-2022 16:35:04	Gathering encrypted triggers
+19-04-2022 16:35:04	Gathering triggers
+19-04-2022 16:35:04	Gathering encrypted and clr ddl triggers
+19-04-2022 16:35:04	Gathering ddl triggers
+19-04-2022 16:35:04	Creating edge constraints
+19-04-2022 16:35:04	Gathering synonyms
+19-04-2022 16:35:04	Gathering defaults
+19-04-2022 16:35:04	Gathering data constraint uddt bindings
+19-04-2022 16:35:04	Gathering rules
+19-04-2022 16:35:04	Gathering data constraint uddt bindings
+19-04-2022 16:35:04	Gathering message types
+19-04-2022 16:35:04	Gathering queues
+19-04-2022 16:35:04	Gathering contracts
+19-04-2022 16:35:04	Gathering services
+19-04-2022 16:35:04	Gathering event notifications
+19-04-2022 16:35:04	Gathering remote service bindings
+19-04-2022 16:35:04	Gathering broker priorities
+19-04-2022 16:35:04	Gathering signatures
+19-04-2022 16:35:04	Gathering data compression options
+19-04-2022 16:35:04	Gathering sequence types
+19-04-2022 16:35:04	Gathering security policies
+19-04-2022 16:35:04	Gather column encryption keys
+19-04-2022 16:35:04	Gathering column master keys
+19-04-2022 16:35:04	Gathering external data sources
+19-04-2022 16:35:04	Gathering external file formats
+19-04-2022 16:35:05	Gathering external tables
+19-04-2022 16:35:05	Gathering extended properties
+19-04-2022 16:35:05	Gathering credentials
+19-04-2022 16:35:05	Gathering logins
+19-04-2022 16:35:05	Gathering server audits
+19-04-2022 16:35:08	Scanning project for duplicate elements
+19-04-2022 16:35:08	Finished duplicate element processing
+19-04-2022 16:35:14	Finished importing database.
+19-04-2022 16:35:14	A summary of the import was saved to the following location: C:\One Drive-Astix Infolytics\OneDrive - Astix Infolytics Pvt. Ltd\Projects\Repos\DatabaseProjects\Wizzo\Wizzo\Import Schema Logs\Wizzo_20220419110449.log
+19-04-2022 16:35:14	Click Finish to continue...

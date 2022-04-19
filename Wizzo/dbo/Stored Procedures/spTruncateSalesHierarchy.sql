@@ -1,0 +1,13 @@
+﻿
+CREATE proc [dbo].[spTruncateSalesHierarchy]
+as
+truncate table tblCompanySalesStructureMgnrLvl1
+truncate table tblCompanySalesStructureMgnrLvl2
+truncate table tblCompanySalesStructureMgnrLvl3
+truncate table tblCompanySalesStructureMgnrLvl4
+truncate table tblCompanySalesStructureSprvsnLvl1
+truncate table tbldbrsalesstructuredbr
+truncate table tblSalesPersonMapping
+truncate table tblmstrperson
+truncate table tblCompanySalesStructureHierarchy_History
+truncate table tblCompanySalesStructureHierarchy

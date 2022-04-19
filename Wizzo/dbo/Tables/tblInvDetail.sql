@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[tblInvDetail] (
+    [InvDetailID]          INT             IDENTITY (1, 1) NOT NULL,
+    [InvID]                INT             NULL,
+    [ProductID]            INT             NOT NULL,
+    [PrdBatchID]           INT             NOT NULL,
+    [InvQty]               INT             NOT NULL,
+    [SalesUnitId]          INT             NULL,
+    [PriceTermId]          INT             NULL,
+    [ProductRate]          [dbo].[Amount]  NOT NULL,
+    [ProductRateBeforeTax] [dbo].[Amount]  NULL,
+    [LineInvVal]           NUMERIC (18, 2) NULL,
+    [TotLineDiscVal]       NUMERIC (18, 2) NULL,
+    [LineOrderValWDisc]    NUMERIC (18, 2) NULL,
+    [TaxRefID]             INT             NULL,
+    [TaxRate]              NUMERIC (18, 2) NULL,
+    [TotTaxValue]          NUMERIC (18, 2) NULL,
+    [NetLineInvVal]        NUMERIC (18, 2) NULL,
+    [FreeQty]              INT             NULL,
+    [LoginIDIns]           INT             CONSTRAINT [DF_tblInvDetail_LoginIDIns] DEFAULT ((0)) NULL,
+    [TimestampIns]         DATETIME        CONSTRAINT [DF_tblInvDetail_TimestampIns] DEFAULT (getdate()) NULL,
+    [LoginIDUpd]           INT             NULL,
+    [TimestampUpd]         DATETIME        NULL,
+    [strSchemeSource]      VARCHAR (500)   NULL,
+    CONSTRAINT [PK_tblInvDetail] PRIMARY KEY CLUSTERED ([InvDetailID] ASC),
+    CONSTRAINT [FK_tblInvDetail_tblInvMaster] FOREIGN KEY ([InvID]) REFERENCES [dbo].[tblInvMaster] ([InvID]) ON DELETE CASCADE ON UPDATE CASCADE
+);
+

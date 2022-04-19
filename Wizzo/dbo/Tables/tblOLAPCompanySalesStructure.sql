@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[tblOLAPCompanySalesStructure] (
+    [ZoneID]               INT           NULL,
+    [ZoneNodeType]         INT           NULL,
+    [Zone]                 VARCHAR (500) NULL,
+    [RegionId]             INT           NULL,
+    [RegionNodeType]       INT           NULL,
+    [Region]               VARCHAR (500) NULL,
+    [ASMAreaID]            INT           NOT NULL,
+    [ASMAreaNodeType]      INT           NULL,
+    [ASMArea]              VARCHAR (500) NULL,
+    [SOAreaID]             INT           NOT NULL,
+    [SOAreaNodeType]       INT           NULL,
+    [SOArea]               VARCHAR (500) NULL,
+    [CoverageAreaID]       INT           NOT NULL,
+    [CoverageAreaNodeType] INT           NULL,
+    [CoverageArea]         VARCHAR (500) NULL,
+    [RouteNodeId]          INT           NULL,
+    [RouteNodeType]        INT           NULL,
+    [Route]                VARCHAR (500) NULL,
+    [StoreID]              INT           NOT NULL,
+    [StoreName]            VARCHAR (500) NULL,
+    [StoreCode]            VARCHAR (50)  NULL,
+    [flgForTeleCaller]     TINYINT       CONSTRAINT [DF__tblOLAPCo__flgFo__47726548] DEFAULT ((0)) NOT NULL,
+    [StarOutlet]           VARCHAR (5)   NULL
+);
+

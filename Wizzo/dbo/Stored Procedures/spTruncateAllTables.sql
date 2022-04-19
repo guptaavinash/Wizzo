@@ -1,0 +1,29 @@
+﻿
+
+Create proc [dbo].[spTruncateAllTables]
+as
+
+
+TRUNCATE TABLE mrco_TEMP_ClosingStockDetail_Astic
+TRUNCATE TABLE mrco_TEMP_BillwiseITEMWISE_Astic
+TRUNCATE TABLE mrco_Tbl_RetailerwiseTargetClient_Newlogic
+TRUNCATE TABLE mrco_RouteMaster_Astic
+TRUNCATE TABLE mrco_RetailerMaster_Astic
+TRUNCATE TABLE mrco_ProductDetails_PT_Astic
+TRUNCATE TABLE mrco_NRC_SCHEMEChildSKUblock_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_SLABS_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_RetailerMaster_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_PRODUCTS_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_PRODUCTMASTER_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_HEADER_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_EXCLUSION
+TRUNCATE TABLE mrco_NRC_SCHEME_BATCHMASTER_Urban
+TRUNCATE TABLE mrco_NRC_SCHEME_Attribute_Urban
+TRUNCATE TABLE mrco_NRC_Prk_OutputServiceSchemeInfo_Urban
+TRUNCATE TABLE mrco_NRC_Prk_OutputService_Urban
+TRUNCATE TABLE mrco_NRC_Prk_InputService_Urban
+TRUNCATE TABLE mrco_NRC_Prk_InputService_Processed_Urban
+TRUNCATE TABLE mrco_MI_Sales_User_Relationship
+TRUNCATE TABLE mrco_FailedVisitOutlet_Data
+TRUNCATE TABLE mrco_DSRAbsentee_Data
+TRUNCATE TABLE mrco_Console2Minet_TCOutletSchedule_Astic

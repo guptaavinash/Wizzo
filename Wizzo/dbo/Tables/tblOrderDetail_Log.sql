@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[tblOrderDetail_Log] (
+    [OrderLogID]           INT            NOT NULL,
+    [OrderDetailID]        INT            NOT NULL,
+    [OrderID]              INT            NOT NULL,
+    [ProductID]            INT            NOT NULL,
+    [PrcBatchID]           INT            NOT NULL,
+    [OrderQty]             INT            NOT NULL,
+    [PriceTermId]          INT            NULL,
+    [ProductRate]          [dbo].[Amount] NOT NULL,
+    [LineOrderVal]         [dbo].[Amount] NOT NULL,
+    [TotLineDiscVal]       [dbo].[Amount] NULL,
+    [LineOrderValWDisc]    [dbo].[Amount] NULL,
+    [TaxRefID]             INT            NULL,
+    [TaxRate]              [dbo].[Amount] NULL,
+    [TotTaxValue]          [dbo].[Amount] NULL,
+    [NetLineOrderVal]      [dbo].[Amount] NULL,
+    [LoginIDIns]           INT            NOT NULL,
+    [TimestampIns]         DATETIME       NOT NULL,
+    [LoginIDUpd]           INT            NULL,
+    [TimestampUpd]         DATETIME       NULL,
+    [SampleQty]            INT            NULL,
+    [SalesUnitId]          INT            NULL,
+    [FreeQty]              INT            NULL,
+    [ProductRateBeforeTax] [dbo].[Amount] NULL,
+    [flgQuotationApplied]  BIT            DEFAULT ((0)) NOT NULL,
+    [SalesQuoteDetId]      INT            NULL
+);
+

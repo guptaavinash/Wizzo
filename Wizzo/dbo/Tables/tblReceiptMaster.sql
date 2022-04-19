@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[tblReceiptMaster] (
+    [RcptId]             INT            IDENTITY (1, 1) NOT NULL,
+    [RcptNo]             VARCHAR (50)   NULL,
+    [RcptSeqNo]          INT            NULL,
+    [RcptInitTag]        VARCHAR (3)    NULL,
+    [RcptDate]           DATE           NOT NULL,
+    [StoreId]            INT            NOT NULL,
+    [RcvdAmount]         [dbo].[Amount] CONSTRAINT [DF_tblReceiptMaster_RcvdAmount] DEFAULT ((0)) NOT NULL,
+    [BalanceAmt]         [dbo].[Amount] CONSTRAINT [DF_tblReceiptMaster_BalanceAmt] DEFAULT ((0)) NOT NULL,
+    [SalesNodeId]        INT            NOT NULL,
+    [SalesNodeType]      INT            NOT NULL,
+    [Fyid]               INT            NOT NULL,
+    [LoginIDIns]         INT            CONSTRAINT [DF_tblReceiptMaster_LoginIDIns] DEFAULT ((0)) NULL,
+    [TimestampIns]       DATETIME       CONSTRAINT [DF_tblReceiptMaster_TimestampIns] DEFAULT (getdate()) NULL,
+    [LoginIDUpd]         INT            NULL,
+    [TimestampUpd]       DATETIME       NULL,
+    [DlvryRouteId]       INT            NULL,
+    [StatusId]           TINYINT        CONSTRAINT [DF_tblReceiptMaster_StatusId] DEFAULT ((1)) NOT NULL,
+    [OrderId]            INT            NULL,
+    [VisitID]            INT            NULL,
+    [StoreVisitCode]     VARCHAR (200)  NULL,
+    [VanNodeID]          INT            NULL,
+    [VanNodeType]        SMALLINT       NULL,
+    [VanLoadUnLoadCycID] INT            NULL,
+    [VanDailyClosureId]  INT            NULL,
+    CONSTRAINT [PK_tblReceiptMaster] PRIMARY KEY CLUSTERED ([RcptId] ASC)
+);
+

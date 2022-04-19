@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[tblPrdMstrSKULvl2] (
+    [NodeID]       INT             IDENTITY (1, 1) NOT NULL,
+    [UnqCode]      VARCHAR (50)    NOT NULL,
+    [Code]         VARCHAR (50)    NOT NULL,
+    [Descr]        VARCHAR (100)   NOT NULL,
+    [FullDescr]    VARCHAR (500)   NOT NULL,
+    [NodeType]     INT             CONSTRAINT [DF__tblPrdMst__NodeT__29971E47] DEFAULT ((20)) NOT NULL,
+    [FileSetIdIns] BIGINT          NOT NULL,
+    [TimestampIns] DATETIME        CONSTRAINT [DF__tblPrdMst__Times__2A8B4280] DEFAULT (getdate()) NOT NULL,
+    [FileSetIdUpd] INT             NULL,
+    [TimestampUpd] DATETIME        NULL,
+    [IsActive]     TINYINT         CONSTRAINT [DF__tblPrdMst__IsAct__2B7F66B9] DEFAULT ((1)) NOT NULL,
+    [flgSeq]       TINYINT         NULL,
+    [PcsInBox]     INT             NULL,
+    [CaseUomId]    TINYINT         NULL,
+    [Volume]       NUMERIC (18, 6) NULL,
+    [VolUomId]     TINYINT         NULL,
+    [CatId]        INT             NULL,
+    [flgSaleType]  TINYINT         DEFAULT ((1)) NOT NULL,
+    [SectorId]     INT             NULL,
+    [Price]        NUMERIC (18, 2) NULL,
+    [IsPromoted]   TINYINT         NULL,
+    [SeqNo]        TINYINT         NULL,
+    [MRP]          NUMERIC (18, 2) NULL,
+    CONSTRAINT [PK__tblPrdMs__6BAE2243A521736D] PRIMARY KEY CLUSTERED ([NodeID] ASC)
+);
+

@@ -1,0 +1,2 @@
+﻿CREATE USER [SSASUser] FOR LOGIN [SSASUser];
+
